@@ -16,12 +16,20 @@
 ### 1. nvimをインストールする
 [これ](https://neovim.io/doc/install/)を参考にしてください。
 #### apple siliconのmacの場合
-```
+```bash
 curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos-arm64.tar.gz
 tar xzf nvim-macos-arm64.tar.gz
-./nvim-macos-arm64/bin/nvim
+
+#　$HOMEでlsするたびに出てくると目障りなので隠しファイルにする
+mv ./nvim-macos-arm64/ ./.nvim/
+
+echo 'export PATH="$HOME/.nvim/bin:$PATH"' >> ~/.bash_profile
+. ~/.bash_profile
 ```
 ### 2. .config内にこのリポジトリをcloneする
-```
-git clone git@github.com:kamiyama-fol/neovim_config.git ~/.config/nvim
+```bash
+# すでに設定ディレクトリがある場合別名に
+mv ~/.config/nvim/ ~/.config/nvim_old/
+
+git clone git@github.com:kamiyama-fol/neovim_config.git ~/.config/nvim/
 ```
