@@ -1,5 +1,7 @@
 require("config.lazy")
 
+vim.opt.number = true
+vim.opt.helplang = 'ja'
 vim.opt.clipboard = "unnamedplus"
 vim.keymap.set("i", "jk", "<Esc>")
 
