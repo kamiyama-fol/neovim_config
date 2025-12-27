@@ -15,7 +15,7 @@
 ## 導入方法
 ### 1. nvimをインストールする
 [これ](https://neovim.io/doc/install/)を参考にしてください。
-apple siliconのmacの場合
+#### apple siliconのmacの場合
 ```
 curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos-arm64.tar.gz
 tar xzf nvim-macos-arm64.tar.gz
